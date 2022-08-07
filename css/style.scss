@@ -242,6 +242,7 @@ img {
 // ==========================================
 
 .price {
+  margin-bottom: 200px;
   &__items {
     display: flex;
     flex-wrap: wrap;
@@ -292,5 +293,44 @@ img {
       top: -31px;
       right: -58px
     }
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+// ==========================================
+//                  PRICE
+// ==========================================
+
+.buy {
+  margin-bottom: 100px;
+  text-align: center;
+}
+.buy__inner {
+  text-align: center;
+}
+.buy__button {
+  background-color: #000;
+  padding: 20px 45px;
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 18;
+  color: #fff;
+  border-radius: 10px;
+
+  transition: all .3s;
+  &:hover {
+    background-color: #fff;
+    border: 2px solid #000;
+    color: #000;
+    padding: 19px 44px;
   }
 }
