@@ -19,6 +19,7 @@
 a {
   text-decoration: none;
 }
+
 .title {
   text-align: center;
   font-weight: 700;
@@ -76,9 +77,11 @@ a {
 
 .header__link {
   margin-left: 50px;
+
   &:first-child {
     margin-left: 0;
   }
+
   &::after {
     content: '';
     display: block;
@@ -89,6 +92,7 @@ a {
 
     transition: all 0.3s;
   }
+
   &:hover::after {
     width: 100%;
   }
@@ -104,10 +108,12 @@ a {
     cursor: pointer;
 
     transition: all .3s;
+
     img {
       width: 30px;
       height: 30px;
     }
+
     &:hover {
       background: rgba(0, 0, 0, 0.1);
     }
@@ -136,15 +142,18 @@ a {
   height: 100vh;
   padding-top: 200px;
 }
+
 .banner__text {
   width: 623px;
 }
+
 .banner__title {
   font-size: 72px;
   font-family: 'Times New Roman', sans-serif;
   color: #fff;
   text-shadow: 4px 4px 8px #000000;
 }
+
 .banner__paragraph {
   font-family: 'Times New Roman', sans-serif;
   color: #fff;
@@ -175,6 +184,7 @@ a {
 .about {
   margin: 0 0 200px;
 }
+
 .about__inner {
   display: flex;
   align-items: center;
@@ -184,38 +194,47 @@ a {
 .about__content {
   display: flex;
 }
+
 .about__images {
   display: flex;
 }
+
 .about__images-column {
   display: flex;
   flex-direction: column;
   margin-left: 10px;
+
   &:first-child {
     margin-left: 0;
   }
-img {
-  width: 135px;
-  height: 200px;
-  margin-bottom: 10px;
-  &:last-child {
-    margin-bottom: 0;
+
+  img {
+    width: 135px;
+    height: 200px;
+    margin-bottom: 10px;
+
+    &:last-child {
+      margin-bottom: 0;
+    }
   }
 }
-}
+
 .about__images-2column {
   margin-top: 56px;
 }
+
 .about__text {
   font-weight: 300;
   margin-top: 56px;
   max-width: 516px;
   margin-left: 30px;
   line-height: 18px;
+
   p {
     margin-bottom: 15px;
   }
 }
+
 .about__text-upper {
   margin-bottom: 49px;
 }
@@ -243,11 +262,13 @@ img {
 
 .price {
   margin-bottom: 200px;
+
   &__items {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   &__item {
     margin-bottom: 30px;
     width: 345px;
@@ -257,6 +278,7 @@ img {
     border-radius: 30px;
     position: relative;
     cursor: wait; // Когда-нибудь закончу хз
+
     &::before {
       content: '';
       width: 100%;
@@ -264,24 +286,31 @@ img {
       display: block;
       border-radius: 30px;
     }
+
     &:nth-child(1)::before {
       background: rgba(255, 0, 0, 0.6);
     }
+
     &:nth-child(2)::before {
       background: rgba(255, 255, 0, 0.6);
     }
+
     &:nth-child(3)::before {
       background: rgba(0, 255, 0, 0.6);
     }
+
     &:nth-child(4)::before {
       background: rgba(0, 0, 255, 0.6);
     }
+
     &:nth-child(5)::before {
       background: rgba(255, 192, 203, 0.6);
     }
+
     &:nth-child(6)::before {
       background: rgba(255, 192, 203, 0.6);
     }
+
     &:nth-child(6)::after {
       content: '';
       width: 150px;
@@ -312,25 +341,129 @@ img {
 
 .buy {
   margin-bottom: 100px;
-  text-align: center;
 }
+
 .buy__inner {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
+
 .buy__button {
   background-color: #000;
   padding: 20px 45px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 18;
+  line-height: 18px;
   color: #fff;
   border-radius: 10px;
 
   transition: all .3s;
+
   &:hover {
     background-color: #fff;
     border: 2px solid #000;
     color: #000;
     padding: 19px 44px;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ==========================================
+//                  PRICE
+// ==========================================
+
+.footer {
+  padding-bottom: 78px;
+  background: #000 url('../img/footer/bg.jpg') no-repeat center;
+  background-size: cover;
+
+  &__inner {
+    display: flex;
+    flex-direction: column;
+  }
+
+  &__nav {
+    ul {
+      display: flex;
+      list-style: none;
+      justify-content: center;
+
+      li {
+        margin: 60px 0 50px 50px;
+
+        &:first-child {
+          margin-left: 0;
+        }
+
+        a {
+          color: #fff;
+          opacity: 0.4;
+          font-family: 'Open Sans', sans-serif;
+          font-weight: 400;
+          font-size: 15px;
+        }
+      }
+    }
+  }
+
+  &__main {
+    display: flex;
+    position: relative;
+    align-items: center;
+  }
+
+  &__logo {
+    display: flex;
+    align-items: center;
+
+    svg,
+    svg * {
+      fill: #fff;
+      stroke: #fff;
+    }
+
+    span {
+      font-family: 'Rogalik';
+      font-size: 24px;
+      color: #fff;
+    }
+  }
+
+  &__copyright {
+    margin-left: auto;
+    span {
+      color: #fff;
+      opacity: 0.4;
+      font-weight: 400;
+      font-size: 15px;
+      font-family: 'Open Sans', sans-serif;
+    }
+  }
+  &__social {
+    position: absolute;
+    height: 100%;
+    left: 50%;
+    transform: translate(-50%, 0);
+    a {
+      margin-left: 20px;
+      &:first-child {
+        margin-left: 0  ;
+      }
+    }
   }
 }

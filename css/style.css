@@ -233,11 +233,11 @@ a {
 
 .buy {
   margin-bottom: 100px;
-  text-align: center;
 }
 
 .buy__inner {
-  text-align: center;
+  display: flex;
+  justify-content: center;
 }
 
 .buy__button {
@@ -245,7 +245,7 @@ a {
   padding: 20px 45px;
   font-weight: 700;
   font-size: 18px;
-  line-height: 18;
+  line-height: 18px;
   color: #fff;
   border-radius: 10px;
   transition: all 0.3s;
@@ -255,4 +255,73 @@ a {
   border: 2px solid #000;
   color: #000;
   padding: 19px 44px;
+}
+
+.footer {
+  padding-bottom: 78px;
+  background: #000 url("../img/footer/bg.jpg") no-repeat center;
+  background-size: cover;
+}
+.footer__inner {
+  display: flex;
+  flex-direction: column;
+}
+.footer__nav ul {
+  display: flex;
+  list-style: none;
+  justify-content: center;
+}
+.footer__nav ul li {
+  margin: 60px 0 50px 50px;
+}
+.footer__nav ul li:first-child {
+  margin-left: 0;
+}
+.footer__nav ul li a {
+  color: #fff;
+  opacity: 0.4;
+  font-family: "Open Sans", sans-serif;
+  font-weight: 400;
+  font-size: 15px;
+}
+.footer__main {
+  display: flex;
+  position: relative;
+  align-items: center;
+}
+.footer__logo {
+  display: flex;
+  align-items: center;
+}
+.footer__logo svg,
+.footer__logo svg * {
+  fill: #fff;
+  stroke: #fff;
+}
+.footer__logo span {
+  font-family: "Rogalik";
+  font-size: 24px;
+  color: #fff;
+}
+.footer__copyright {
+  margin-left: auto;
+}
+.footer__copyright span {
+  color: #fff;
+  opacity: 0.4;
+  font-weight: 400;
+  font-size: 15px;
+  font-family: "Open Sans", sans-serif;
+}
+.footer__social {
+  position: absolute;
+  height: 100%;
+  left: 50%;
+  transform: translate(-50%, 0);
+}
+.footer__social a {
+  margin-left: 20px;
+}
+.footer__social a:first-child {
+  margin-left: 0;
 }/*# sourceMappingURL=style.css.map */
